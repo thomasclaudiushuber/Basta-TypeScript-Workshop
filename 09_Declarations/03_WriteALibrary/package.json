@@ -1,0 +1,9 @@
+{
+  "name": "my-awesome-library",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "types":"main.d.ts",
+  "author": "Thomas Claudius Huber",
+  "license": "ISC"
+}
