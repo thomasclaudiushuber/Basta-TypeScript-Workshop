@@ -1,19 +1,13 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Getting started with TypeScript</title>
-    <script src="node_modules/systemjs/dist/system.js"></script>
-  </head>
-  <body>
-    <script>
-        SystemJS.config({
-            baseURL: '/',
-            defaultJSExtensions: true
-        });
-        System.import('./main')
-          .then(function(){console.log('loaded');})
-          .catch(function(err){ console.error(err); });
-    </script>
-      <p>Look in the browser's console</p>
-  </body>
+
+<head>
+  <title>Typescript Tutorial</title>
+</head>
+
+<body>
+  <script src="bundle.js"></script>
+  <p>Look in the browser's console</p>
+</body>
+
 </html>

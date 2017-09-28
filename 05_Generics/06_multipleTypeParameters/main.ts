@@ -1,7 +1,7 @@
 class Dictionary<TKey, TValue> {
   private _items = new Array<[TKey, TValue]>();
-  getItem(TKey): TValue {
-    let foundItems  = this._items.filter(item => item[0] == TKey);
+  getItem(key: TKey): TValue {
+    let foundItems  = this._items.filter(item => item[0] == key);
     if(foundItems.length!=1)
     {
       throw new Error("Item with key does not exist");

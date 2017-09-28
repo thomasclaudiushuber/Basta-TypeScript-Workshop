@@ -1,0 +1,19 @@
+<div>
+  <label>name:</label>
+  <input type="text" [(ngModel)]="friend.name">
+</div>
+<div>
+  <label>github:</label>
+  <span>{{friend.github}}</span>
+</div>
+<h2>Github repos of {{friend.name}}</h2>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Language</th>
+  </tr>
+  <tr *ngFor="let repo of githubRepos">
+    <td>{{repo.name}}</td>
+    <td>{{repo.language}}</td>
+  </tr>
+</table>

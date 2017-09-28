@@ -1,18 +1,14 @@
 {
-  "name": "typescript-book-module-sample2",
+  "name": "typescript-tutorial",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "tsc && concurrently \"tsc -w\" \"lite-server\" "
+    "build": "tsc && webpack --config webpack.config.js"
   },
   "author": "Thomas Claudius Huber",
   "license": "ISC",
-  "dependencies": {
-    "systemjs": "^0.19.41"
-  },
   "devDependencies": {
-    "concurrently": "^3.1.0",
-    "lite-server": "^2.2.2"
+    "webpack": "^2.3.3"
   }
 }
