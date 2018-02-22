@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, OnChanges } from '@angular/core';
-import { Friend } from "app/friends";
-import { GithubRepo, GithubService } from "app/github.service";
+import { Friend } from 'app/friends';
+import { GithubRepo, GithubService } from 'app/github.service';
 
 
 @Component({
@@ -14,13 +14,13 @@ export class FriendComponent implements OnInit, OnChanges {
 
   githubRepos: GithubRepo[];
 
-  constructor(private githubService:GithubService) { }
+  constructor(private githubService: GithubService) { }
 
   ngOnInit() {
   }
   ngOnChanges() {
     this.githubService.loadGithubRepos(this.friend.github)
-    .subscribe(repos=>this.githubRepos=repos);
+    .subscribe(repos => this.githubRepos = repos);
   }
 
  

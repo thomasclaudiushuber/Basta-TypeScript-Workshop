@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import {Friend, FRIENDLIST} from './friends';
+import { Friend, FRIENDLIST } from './friends';
+
 
 @Component({
   selector: 'app-root',
-  template:`<h1>Select a friend</h1>
+  template: `<h1>Select a friend</h1>
     <ul>
       <li *ngFor="let friend of friends" style="cursor:pointer"
          [class.isSelected]="friend == selectedFriend"
@@ -21,9 +22,9 @@ styles: [`.isSelected{font-weight:bold;}`]
 export class AppComponent {
   friends: Friend[] = FRIENDLIST;
 
+  selectedFriend: Friend;
+
   onFriendSelect(friend: Friend) {
     this.selectedFriend = friend;
   }
-
-  selectedFriend: Friend;
 }

@@ -5,7 +5,8 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { FriendComponent } from './friend/friend.component';
-import { GithubService } from "app/github.service";
+import { GithubService } from './github.service';
+
 
 @NgModule({
   declarations: [
@@ -17,7 +18,7 @@ import { GithubService } from "app/github.service";
     FormsModule,
     HttpModule
   ],
-  providers: [GithubService],
+    providers: [GithubService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
