@@ -6,9 +6,9 @@
 /******/ 	function __webpack_require__(moduleId) {
 /******/
 /******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId])
+/******/ 		if(installedModules[moduleId]) {
 /******/ 			return installedModules[moduleId].exports;
-/******/
+/******/ 		}
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = installedModules[moduleId] = {
 /******/ 			i: moduleId,
@@ -83,13 +83,13 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-var Friend = (function () {
+var Friend = /** @class */ (function () {
     function Friend(firstName) {
         this.firstName = firstName;
     }
     return Friend;
 }());
-var Developer = (function (_super) {
+var Developer = /** @class */ (function (_super) {
     __extends(Developer, _super);
     function Developer() {
         return _super !== null && _super.apply(this, arguments) || this;

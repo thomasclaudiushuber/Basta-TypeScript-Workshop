@@ -9,6 +9,6 @@
   "author": "Thomas Claudius Huber",
   "license": "ISC",
   "devDependencies": {
-    "webpack": "^2.3.3"
+    "webpack": "^2.7.0"
   }
 }

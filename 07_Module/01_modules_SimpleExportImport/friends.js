@@ -10,13 +10,13 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-var Friend = (function () {
+var Friend = /** @class */ (function () {
     function Friend(firstName) {
         this.firstName = firstName;
     }
     return Friend;
 }());
-var Developer = (function (_super) {
+var Developer = /** @class */ (function (_super) {
     __extends(Developer, _super);
     function Developer() {
         return _super !== null && _super.apply(this, arguments) || this;
