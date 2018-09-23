@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, OnChanges } from '@angular/core';
-import { Friend } from 'app/friends';
-import { GithubRepo, GithubService } from 'app/github.service';
+import { Friend } from '../friends';
+import { GithubRepo, GithubService } from '../github.service';
 
 
 @Component({

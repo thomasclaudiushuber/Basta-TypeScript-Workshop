@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
-import 'rxjs/add/operator/map';
+import { map } from 'rxjs/operators';
 
 @Injectable()
 export class GithubService {
@@ -9,7 +9,7 @@ export class GithubService {
  loadGithubRepos(githubUser: string) {
     return this.http.get(
       `https://api.github.com/users/${githubUser}/repos`)
-      .map(res => res.json() as GithubRepo[]);
+      .pipe(map(res => res.json() as GithubRepo[]));
   }
 }
 export interface GithubRepo {
